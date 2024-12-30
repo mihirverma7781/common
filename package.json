@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "del ./build/*",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && tsc",
+    "publish": "git add . && git commit -m \" quick fix \" && npm version patch && npm run build && npm publish "
   },
   "keywords": [],
   "author": "",
