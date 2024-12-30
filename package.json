@@ -8,16 +8,16 @@
     "build/**/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "del ./build/*",
+    "clean": "rimraf ./build/*",
     "build": "npm run clean && tsc",
-    "publish": "git add . && git commit -m \" quick fix \" && npm version patch && npm run build && npm publish "
+    "publish": "git add . && git commit -m \" quick fix \" && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "del-cli": "^6.0.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.7.2"
   },
   "dependencies": {
