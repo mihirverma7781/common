@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf ./build",
     "build": "npm run clean && tsc",
-    "publish": "git add . && git commit -m \" quick fix \" && npm version patch && npm run build && npm publish"
+    "pub": "git add . && git commit -m \" quick fix \" && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
