@@ -11,7 +11,7 @@ export function errorHandler(
     return res.status(err?.statusCode).json({ errors: err.serializeErrors() });
   }
 
-  console.error(err);
+  console.error("Error Occurred:", err);
   return res.status(400).json({
     errors: [
       {
